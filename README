@@ -84,7 +84,3 @@ $ ip6tables -A OUTPUT -d ff05::c/128 -p udp -m udp --dport 1900 -j SET --add-set
 $ ip6tables -A INPUT -p udp -m set --match-set upnp6 dst,dst -j ACCEPT
 $ ip6tables -A INPUT -d ff02::c/128 -p udp -m udp --dport 1900 -j ACCEPT
 $ ip6tables -A INPUT -d ff05::c/128 -p udp -m udp --dport 1900 -j ACCEPT
-
-Detailed description is available on:
-https://serverfault.com/a/911286
-https://unix.stackexchange.com/a/444804
